@@ -1,3 +1,30 @@
+var numbers = [1, 2, 3, 4, 5];
+var doubled = numbers.map(function (num) {
+  return num * 2;
+});
+console.log(doubled);
+
+var numbers = [0, 2, 4, 6, 8];
+var x = numbers.map(function (element) {
+  return element + 5;
+});
+console.log(x);
+
+var numbers = [1, 2, 3, 4, 5];
+
+var larger = numbers.filter(function (num) {
+  return num > 1;
+});
+
+console.log(larger);
+
+/*
+var xyTrace = { x: [1, 2, 3], y: [10, 20, 30] };
+var traceArray = [xyTrace];
+Plotly.newPlot("plotArea", traceArray);
+*/
+
+/*
 var trace = {
   labels: [
     "nonalcoholic beer",
@@ -17,6 +44,7 @@ var layout = {
   title: "'Bar' Chart",
 };
 Plotly.newPlot("plotArea", data, layout);
+*/
 
 /*
 var trace1 = {
